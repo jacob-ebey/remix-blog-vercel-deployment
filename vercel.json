@@ -1,0 +1,15 @@
+{
+  "build": {
+    "env": {
+      "ENABLE_FILE_SYSTEM_API": "1"
+    }
+  },
+
+  "functions": {
+    "api/test.js": {
+      "memory": 1024,
+      "maxDuration": 5,
+      "includeFiles": ["posts/*.md"]
+    }
+  }
+}
